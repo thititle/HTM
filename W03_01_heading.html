@@ -31,7 +31,7 @@
         padding: 20px 40px;
         border-radius: 20px;
         border-top: 4px solid red;
-        box-shadow: 0 4px 8px rgb(82, 80, 80);
+        box-shadow: 0 4px 8px rgb(122, 122, 122);
         margin-bottom: 40px;
     }
     .note{
@@ -39,12 +39,31 @@
         padding-left: 10px;
         color: darkgray;
     }
+    .note::before {
+        content:"👌" ;
+    }
     pre{
         border-left: 4px solid rgb(255, 0, 0);
         padding-left: 10px;
         background-color: rgb(156, 156, 156);
         padding: 20px 40px;
         border-radius: 15px;
+    }
+    .back-link{
+        color:rgb(0, 110, 255);
+        text-decoration: none;
+
+        background-color: rgb(146, 241, 241);
+        display: inline-block;
+        text-align: center;
+
+        padding: 4px 24px ;
+        border-radius: 100px;
+    }
+    .back-link:hover{
+        color: rgb(184, 0, 0);
+        text-decoration: underline;
+        background-color: chartreuse;
     }
     
     </style>
@@ -97,7 +116,7 @@
     <h2>3. ถ้าอยากให้หัวข้อ “ใหญ่กว่า” หรือ “เล็กกว่า” ขนาดเดิม?</h2>
     <per><xmp> 
     <h3 {
-font-size: 40px; /* ท าให้ H3 ใหญ่เท่า H1 ได ้ */
+font-size: 40px; /* ทำให้ H3 ใหญ่เท่า H1 ได ้ */
 color: #c4005a;
 }
 h5 {
@@ -105,10 +124,10 @@ font-size: 12px; /* ท าให้ H5 เล็กลงอีก */
 }</per></xmp>
     <p>หรือสามารถกำหนดเฉพาะบางหัวข้อได ้</p>
     <pre>&lt;h3 style="font-size: 50px; color: blue;"&gt;Big Custom Heading&lt;/h3&gt;</pre>
-        <p class="note"> 📌จ าไว ้ว่า ล าดับหัวข้อควรเป็น H1 → H2 → H3 ตามโครงสรา้งเนื้อหา ไม่ควรใช ้H5 เพื่อให ้ “ตัวเล็กลง” หรือ ใช ้H1
+        <p class="note"> 📌จำไว้ว่า ลำดับหัวข้อควรเป็น H1 → H2 → H3 ตามโครงสรา้งเนื้อหา ไม่ควรใช ้H5 เพื่อให ้ “ตัวเล็กลง” หรือ ใช ้H1
 เพื่อให ้ “ตัวใหญ่ขึ้น” → ต้องแก้ด้วย CSS เท่านั้น </p>
     </section>
-    <a href="index.html">&larr; Back to HTML Tutorial</a>
+    <a href="index.html" class ="back-link">&larr; Back to HTML Tutorial</a>
 </div>
 
 </body>
