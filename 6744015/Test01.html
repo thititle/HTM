@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_01</title>
+    <style>
+        body{
+            margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: rgb(199, 199, 199);
+        }
+        header {
+    background-color: rgb(67, 151, 248);
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgb(131, 131, 131);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 10px auto;
+}
+        .container{
+            padding: 20px;
+            max-width: 1000px;
+            margin: 10px auto;
+            border-radius: 15px;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            width: 150%;
+
+        }
+    .card{
+            background-color: rgb(75, 107, 247);
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 30px 0px;
+            
+        }
+        .card2 {
+        background-color: rgb(146, 146, 238);
+        padding: 20px;
+        box-shadow: 2px 2px 5px rgb(87, 0, 250);
+        margin: 40px auto;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:  190px;
+}
+        .card3{
+            background-color: rgb(198, 241, 215);
+            padding: 20px 40px;
+            border-radius: 15px;
+            margin: 40px auto;
+            width: 60%;
+        }
+        .card3 a{
+            background-color: rgb(128, 250, 175);
+            padding: 20px 40px;
+            border-radius: 15px;
+            margin: 40px auto;
+            width: 60%;
+        }
+        .card2 li{
+            margin: 15px;
+        }
+        .card2 li :hover{
+            box-shadow:0 2px 8px yellow;
+            transition: 0.3s ease;
+        }
+        .card4{
+            background-color: red;
+            box-shadow: black 0px 9px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .back{
+            background-color: aliceblue;
+            padding: 20px 40px;
+            border-radius: 15px;
+            border: 4px solid black;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.img-small {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px solid;
+}
+    .list-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+..list-menu li {
+    margin-top: 15px;
+}
+..list-menu li:hover {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease;
+}
+.list-menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(98, 192, 255), rgb(12, 74, 243));
+  box-shadow: 0 2px 12px rgb(0, 0, 0);
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+h1 {
+  color: #ffffff;
+}
+.list-menu a:hover {
+  background: linear-gradient(135deg, rgb(98, 255, 234), rgb(192, 236, 194));
+}
+.list-menu2 a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(98, 192, 255), rgb(12, 74, 243));
+  box-shadow: 0 2px 12px rgb(0, 0, 0);
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+..list-menu2 li:hover {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease;
+}
+..list-menu2 li {
+    margin-top: 15px;
+}
+.list-menu2  a:hover {
+   box-shadow: linear-gradient(135deg, rgb(235, 235, 143));
+
+}
+    </style>
+    
+</head>
+<body>
+    <header>
+    <h1>📚 รายงานผลเกรด</h1>
+    </header>
+    
+    <div class="card2">
+        <ul class="list-menu">
+    
+        <il><a href="c1">📚ข้อมูล</a></il>   
+        <il><a href="c2">📔ผลการเรียน</a></il>
+        <il><a href="c3">📱ติดต่อ</a></il>
+        </ul>
+    </header>
+    </div>
+    <div class="card">
+
+    <div class="card3">
+        <h2 id="c1"> 👩‍🎓Mr.thirawut Luangphithak</h2>
+        <P> 📚รหัสนักศึกษา: 674230015</P>
+        <P> 👩‍🎓ชื่อ-นามสกุล: ถิรวุฒิ หลวงพิทักษ์</P>
+        <P> 🎓หมู่เรียน: 67/44</P>
+        <P> 👨‍🏫อาจารย์ที่ปรึกษา:</P>
+        <P> 🔗Github : https://github.com/thititle/HTM</P>
+        <p></p>
+        <img src="FB_IMG_1764570620216.jpg" alt="1">
+    </div>
+    
+    </div>
+    <div class="container">
+    <ul class="list-menu2">
+    <il><a href=""> 📘1 เทรอม 1:</a></il>
+    <il><a href=""> 📕2 เทรอม 1:</a></il>
+    <il><a href=""> 📗2 เทรอม 2:</a></il>
+    </div>
+</ul>
+        <div class="card4"><h1>🏆เกรดเฉลี่ยสะสม: 2.75</h1></div>
+        <div class="">
+    <div class="card">
+        <p>© 2024 webmaster by Thirawut Luangphithak. ID 674230015.</p>
+        <p>🏫 Nakhon Pathom Rajabhat University</p>
+    </div>
+    </div>
+</body>
+</html>
