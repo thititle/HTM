@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>รายงานผลเกรด</title>
+
+<style>
+/* ------------------ พื้นฐาน ------------------ */
+body{
+    margin:0;
+    font-family: sans-serif;
+    background: linear-gradient(135deg,#7b5fc7,#5a7fdc);
+}
+
+/* ------------------ Header ------------------ */
+header{
+    background:#1f6fb2;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    font-size:40px;
+}
+
+/* ------------------ เมนู ------------------ */
+.menu{
+    background:#fff;
+    width:900px;
+    margin:20px auto;
+    padding:10px;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.menu a{
+    text-decoration:none;
+    padding:8px 20px;
+    border-radius:10px;
+    font-size:16px;
+    color:#fff;
+    background:#7aa7ff;
+    transition:0.3s;
+}
+
+.menu a.active{
+    background:#ff875c;
+    color:#000000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+}
+
+
+.menu a.active{
+    background:#ff875c;
+}
+
+/* ------------------ กล่องข้อมูล ------------------ */
+.profile-card{
+    width:900px;
+    margin:20px auto;
+    background:#f0f3ff;
+    border-radius:20px;
+    padding:20px;
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+/* กล่องข้อมูลซ้าย */
+.profile-info{
+    background:#ff875c;
+    color:#fff;
+    padding:20px;
+    border-radius:15px;
+    width:60%;
+}
+
+.profile-info p{
+    font-size:16px;
+    
+}
+
+/* ------------------ รูปภาพ ------------------ */
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    overflow:hidden;
+    transition:0.4s;
+    cursor:pointer;
+     cursor: pointer;
+    margin: 20px auto;
+
+}
+
+.profile-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+}
+
+/* ⭐ เอฟเฟกต์ขยายรูป */
+.profile-img:hover{
+    transform: scale(1.15);
+    box-shadow:0 10px 30px rgba(20, 7, 255, 0.719);
+}
+
+/* ------------------ เทอม ------------------ */
+.term{
+    width:900px;
+    margin:20px auto;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.term div{
+    background:#cfe1ff;
+    padding:10px 20px;
+    border-radius:12px;
+    font-size:16px;
+
+    box-shadow:0 4px 12px rgba(255, 1, 1, 0.25);
+    transition:0.3s;
+}
+.term div:hover{
+    transform: translateY(-4px);
+    box-shadow:0 8px 18px rgb(254, 1, 1);
+}
+
+
+/* ------------------ เกรด ------------------ */
+.gpa{
+    width:900px;
+    margin:20px auto;
+    background:#d9534f;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    font-size:40px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgb(251, 251, 251);
+}
+
+/* ------------------ Footer ------------------ */
+footer{
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+    padding:20px;
+}
+
+.menu-box{
+    background:#ffffff;
+    padding:12px 16px;
+    border-radius:14px;
+    display:flex;
+    gap:14px;
+    justify-content:center;
+    width:fit-content;
+    margin:30px auto;
+}
+
+/* ปุ่มปกติ */
+.menu-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    padding:8px 18px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    background:#9ec5ff;
+    color:#ffffff;
+    transition:0.3s;
+}
+
+/* ปุ่มที่ถูกเลือก (ตามภาพ) */
+.menu-btn.active{
+    background:#ff936c;
+    color:#8bffec;
+    transform: translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>📚 รายงานผลเกรด</header>
+
+<div class="menu-box">
+    <button class="menu-btn active" onclick="setActive(this)">
+        👩‍🎓 ข้อมูลนักศึกษา
+    </button>
+    <button class="menu-btn" onclick="setActive(this)">
+        📘 ผลการเรียน
+    </button>
+    <button class="menu-btn" onclick="setActive(this)">
+        📞 ติดต่อ
+    </button>
+</div>
+
+<script>
+function setActive(btn){
+    document.querySelectorAll('.menu-btn')
+        .forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+}
+</script>
+
+
+<div class="profile-card">
+    <div class="profile-info">
+        <p><b>👩‍🎓Mr. Thirawut Luangphithak</b></p>
+        <p>📚รหัสนักศึกษา : 674230015</p>
+        <p>🎓หมู่เรียน : 67/44</p>
+        <p>🧑‍🏫อาจารย์ที่ปรึกษา : -</p>
+        <p>🔗Github : https://github.com/thititle/HTM</p>
+    </div>
+
+    <div class="profile-img">
+    <img src="images/Thirawut.png" alt="1" >
+</div>
+
+</div>
+
+<div class="term">
+    <div>📘 ปี 1 เทอม 1 : 3.52</div>
+    <div>📕 ปี 1 เทอม 2 : 3.70</div>
+    <div>📗 ปี 2 เทอม 1 : 3.32</div>
+</div>
+
+<div class="gpa">🏆 เกรดเฉลี่ยสะสม : 2.75</div>
+
+<footer>
+    © 2024 Webmaster by Thirawut Luangphithak ID 674230015<br>
+    🏫 Nakhon Pathom Rajabhat University
+</footer>
+
+</body>
+</html>
