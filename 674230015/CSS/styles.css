@@ -1,0 +1,202 @@
+/* Global CSS Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/014/459/796/small/winter-season-scene-merry-christmas-snow-background-3d-illustration-glowing-snowflakes-falling-winter-landscape-blue-sky-snowstorm-empty-space-for-product-design-free-vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: whitesmoke;
+}
+html {
+  scroll-behavior: smooth;
+  scrool-padding-top: 250px;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 250px auto 20px;
+}
+
+/* Share CSS */
+
+code {
+  background-color: rgb(206, 206, 206);
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+pre {
+  border-left: 4px solid rgb(25, 0, 255);
+  padding-left: 10px;
+  background-color: rgb(240, 240, 240);
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+.badge {
+  background-color: rgb(227, 209, 255);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #1c74f7;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.card {
+  background-color: ghostwhite;
+  padding: 20px;
+  border-radius: 15px;
+  border-top: 4 px solid rebeccapurple;
+  box-shadow: 5px 5px 10px red;
+  margin: 40px 0px;
+}
+
+.note {
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+/* Groupl: Header Styles */
+header {
+  background-color: ghostwhite;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgb(131, 131, 131);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.list-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.list-menu li {
+  margin-top: 15px;
+}
+.list-menu li:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s ease;
+}
+.list-menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(98, 192, 255), rgb(12, 74, 243));
+  box-shadow: 0 4px 15px rgb(62, 1, 175);
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+h1 {
+  color: #002792;
+}
+.list-menu a:hover {
+  background: linear-gradient(135deg, rgb(98, 255, 234), rgb(1, 150, 9));
+}
+/* Group2: */
+.img-small {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px solid;
+}
+.position {
+  display: flex;
+  align-items: center;
+  border: rgb(247, 56, 56) dashed 15px;
+  margin: 15px;
+}
+.position.left {
+  justify-content: flex-start;
+}
+.position.center {
+  justify-content: center;
+}
+.position.right {
+  justify-content: flex-end;
+}
+
+/* Group3: */
+.img-fixed {
+  width: 260px;
+  height: 160px;
+  margin: 15px;
+  object-fit: cover;
+}
+/* Group4: */
+.obj-fit-image {
+  width: 800px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.obj-fit-image.contain {
+  object-fit: contain;
+}
+.obj-fit-image.fill {
+  object-fit: fill;
+}
+.obj-fit-image.cover {
+  object-fit: cover;
+}
+/* Group5: */
+.img-youtube img {
+  width: 260px;
+  border-radius: 12px;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+.img-youtube img:hover {
+  /* transform: rotate(180deg); */
+  transform: scale(1.1);
+  box-shadow: 0.4px 12px rgb(77, 76, 76);
+}
+/* Group6: */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.gallery img {
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Group7: */
+Figuer {
+  text-align: center;
+}
+/* Group8: */
+.bg-image {
+  background-image: url("../imges/manu.png");
+}
+/* Group9: */
+
+/* Group10: */
+.back-link {
+  color: rgb(0, 110, 255);
+  text-decoration: none;
+  display: block;
+  background-color: rgb(146, 241, 241);
+  font-weight: bold;
+  text-align: center;
+
+  padding: 4px 24px;
+  border-radius: 100px;
+}
+.back-link:hover {
+  color: rgb(184, 0, 0);
+  text-decoration: underline;
+  background-color: chartreuse;
+}
