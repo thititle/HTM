@@ -6,14 +6,14 @@
 <title>รายงานผลเกรด</title>
 
 <style>
-/* ------------------ พื้นฐาน ------------------ */
+
 body{
     margin:0;
     font-family: sans-serif;
     background: linear-gradient(135deg,#7b5fc7,#5a7fdc);
 }
 
-/* ------------------ Header ------------------ */
+
 header{
     background:#1f6fb2;
     color:#fff;
@@ -22,7 +22,7 @@ header{
     font-size:40px;
 }
 
-/* ------------------ เมนู ------------------ */
+
 .menu{
     background:#fff;
     width:900px;
@@ -55,7 +55,7 @@ header{
     background:#ff875c;
 }
 
-/* ------------------ กล่องข้อมูล ------------------ */
+
 .profile-card{
     width:900px;
     margin:20px auto;
@@ -67,7 +67,7 @@ header{
     align-items:center;
 }
 
-/* กล่องข้อมูลซ้าย */
+
 .profile-info{
     background:#ff875c;
     color:#fff;
@@ -81,7 +81,7 @@ header{
     
 }
 
-/* ------------------ รูปภาพ ------------------ */
+
 .profile-img{
     width:180px;
     height:180px;
@@ -101,13 +101,13 @@ header{
     
 }
 
-/* ⭐ เอฟเฟกต์ขยายรูป */
+
 .profile-img:hover{
     transform: scale(1.15);
     box-shadow:0 10px 30px rgba(20, 7, 255, 0.719);
 }
 
-/* ------------------ เทอม ------------------ */
+
 .term{
     width:900px;
     margin:20px auto;
@@ -131,7 +131,7 @@ header{
 }
 
 
-/* ------------------ เกรด ------------------ */
+
 .gpa{
     width:900px;
     margin:20px auto;
@@ -144,12 +144,14 @@ header{
     box-shadow:0 8px 18px rgb(251, 251, 251);
 }
 
-/* ------------------ Footer ------------------ */
+
 footer{
-    text-align:center;
-    color:#fff;
-    font-size:16px;
-    padding:20px;
+    background:#3353f8;      
+    text-align:center;       
+    color:#ffffff;           
+    font-size:16px;          
+    padding:18px 10px;      
+    line-height:1.6;        
 }
 
 .menu-box{
@@ -163,7 +165,7 @@ footer{
     margin:30px auto;
 }
 
-/* ปุ่มปกติ */
+
 .menu-btn{
     font-family: Arial, Helvetica, sans-serif;
     font-size:16px;
@@ -176,7 +178,7 @@ footer{
     transition:0.3s;
 }
 
-/* ปุ่มที่ถูกเลือก (ตามภาพ) */
+
 .menu-btn.active{
     background:#ff936c;
     color:#8bffec;
@@ -223,7 +225,7 @@ function setActive(btn){
     </div>
 
     <div class="profile-img">
-    <img src="images/Thirawut.png" alt="1" >
+    <img src="data:image/jpg;base64,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" alt="1" >
 </div>
 
 </div>
@@ -237,6 +239,7 @@ function setActive(btn){
 <div class="gpa">🏆 เกรดเฉลี่ยสะสม : 2.75</div>
 
 <footer>
+    <div>
     © 2024 Webmaster by Thirawut Luangphithak ID 674230015<br>
     🏫 Nakhon Pathom Rajabhat University
 </footer>
