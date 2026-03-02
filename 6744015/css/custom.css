@@ -440,6 +440,20 @@ footer {
   background-color: var(--bg01);
   font-weight: bold;
 }
+.icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid rgb(43, 43, 253);
+}
+.up {
+  border-bottom: 10px solid var(--ples);
+}
+.down {
+  border-bottom: 10px solid var(--iuns);
+}
 :root {
   --bg01: rgb(245, 150, 25);
   --bg02: rgb(238, 20, 20);
