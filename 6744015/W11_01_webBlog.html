@@ -33,15 +33,18 @@
     <nav class="main-nav">
         <div class="wrapper">
             <ul class="nav-menu">
+                <span></span>
+                <div id="hamberger-menu">
                 <li><a href="#"class="active">Home</a></li>
                 <li><a href="#">AI Technology</a></li>
                 <li><a href="#">Machine Learning</a></li>
                 <li><a href="#">Deep Learning</a></li>
-                <li><a href="#">AI Tools</a></li>
-                <li><a href="#">AI News</a></li>
+                <li><a href="W07_01_image.html">AI Tools</a></li>
+                <li><a href="#contact">AI News</a></li>
             </ul>
         </div>
-    </nav>
+    </div>
+</nav>
     
     <!-- Hero Section -->
      <!-- <section></section> -->
@@ -89,8 +92,15 @@
         <!-- Page Content -->
         <div class="Page">
             <div class="wrapper">
-                <div class="content-grid">
+                <div class="card order-box-image">
 
+                </div>
+                <div class="card order-box-table">
+
+                </div>
+                <div class="card order-box-fprm" id="contact">
+
+                </div>
                 <main class="post-list">
                     <! -- Card 1 =Image -- >
                     <a class="card">
@@ -270,8 +280,11 @@
         </div>
 
                 </main>
-                <aside>
+                <aside class="sidebar">
                     <! -- Widget 01 -- >
+                    <div class="widget order-w-intro">
+                        
+                    </div>
                     <div class="widget">
                         <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
                         <p class="post-description">
@@ -282,6 +295,9 @@
                     <a href="" class="btn-facebook">กดติดตามใน Facebook </a>
                 </div>
                     <! -- Widget 02 -- >
+                    <div class="widget order-w-f-green">
+                        
+                    </div>
                     <div class="widget">
                         <h2>📧 รับข่าวสารใหม่</h2>
                         <div class="">
@@ -308,14 +324,23 @@
                         <button type="submit" class="form-button" class="submit-button">🚀 สมัครเลย!</button>
                     </div>
                     <! -- Widget 03 -- >
+                    <div class="widget order-w-f-purple">
+                        
+                    </div>
                     <div class="widget">💬 ติดต่อด่วน
 ชื่อ        เรื่องที่ต้องการติดต่อ      ข้อความสั้นๆ        📤 ส่งเลย</div>
                     <! -- Widget 04 -- >
+                    <div class="widget order-w-fb">
+                        
+                    </div>
                     <div class="widget">
                     <div class="facebook-like">กล่อง Facebook Like (ตัวอย่าง)
                     203,779 คนถูกใจ</div>
 </div>
                     <! -- Widget 05 -- >
+                    <div class="widget order-w-sp">
+
+                    </div>
                     <div class="widget">
                     <div class="widget-title">  Sponsor</div> 
                     <div class="">พื้นที่โฆษณา / วิดีโอ</div>
@@ -342,7 +367,7 @@
 <p class="post-desription">
 ภาพตัวอย่างการแสดงผล responsive บนอุปกรณ์ต่างๆ
 รวมคำสั่ง CSS ที่จำเป็นสำหรับการสร้างเว็บไซต์ที่รองรับทุกขนาดหน้าจอ เริ่มจาก media queries, flexbox, grid layout และเทคนิคการใช้ viewport units เพื่อให้เว็บของคุณดูดีในทุกอุปกรณ์ … </p>
-<div class=""
+<div class="warp-gold-table">
 <table class="gold-table">
     <thead>
         <tr>
@@ -421,23 +446,34 @@
 <a href="">media queries</a><span>•</span>
 <a href="">flexbox</a><span>•</span> 
 <a herf="">CSS grid</a> 
-</div>
+        </div>
     </div>
-    
-
-
-
-
-
-
-
-
-
-            </div>
+</div>
     <!-- Footer -->
-     <footer><p>© 2025 Suksawat — All rights reserved.</p>
+<footer><p>© 2025 Suksawat — All rights reserved.</p>
 Designed for educational/demo purposes • <a href="">Contact</a>
 </footer>
+   <script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
 
  </body>
- </html>
+ <html> 
